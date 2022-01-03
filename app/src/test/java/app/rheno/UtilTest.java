@@ -9,10 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class UtilTest {
     @Test void utilPowerOfTwoTest() {
         Util utilObj = new Util();
-	assertEquals(utilObj.powerOfTwo(1), 1.00);
+	assertEquals(utilObj.powerOfTwo(0), 1.00);
         assertEquals(utilObj.powerOfTwo(2), 4.00);
-	assertEquals(utilObj.powerOfTwo(10), 100.00);
-	assertEquals(utilObj.powerOfTwo(100), 10000.00);
-	assertEquals(utilObj.powerOfTwo(1000), 1000000.00);
+	assertEquals(utilObj.powerOfTwo(4), 16.00);
+	assertEquals(utilObj.powerOfTwo(100), 1.2676506002282294E30);
     }
 }
